@@ -5,5 +5,9 @@
 *.bcf
 *.blg
 *.run.xml
+*.nav
+*.out
+*.snm
+*.toc
 Session.vim
 
