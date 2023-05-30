@@ -1,6 +1,8 @@
 \documentclass{article}
 
 \usepackage{titlesec}
+\usepackage{titling}
+\usepackage[margin=1in]{geometry}
 
 \titleformat{\section}
 {\huge\bfseries\lowercase}
@@ -18,7 +20,17 @@
 {\bfseries}
 {}
 {0em}
-{}
+{}[ ---]
+
+\renewcommand{\maketitle}{
+	\begin{center}
+    {\huge\bfseries\theauthor}
+    
+    \vspace{.5em}
+
+    javiermarquezportillo@gmail.com --- jportillo.com
+	\end{center}
+}
 
 \begin{document}
 
