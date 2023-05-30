@@ -1,19 +1,20 @@
-\documentclass{article}
+\documentclass[letterpaper]{article}
 
 \usepackage{titlesec}
 \usepackage{titling}
-\usepackage[margin=1in]{geometry}
+\usepackage[margin=1.2in]{geometry}
+\usepackage{enumitem}
 
-\titleformat{\section}
-{\huge\bfseries\lowercase}
+\titleformat{\section}[frame]
+{\huge}
 {}
-{0em}
-{}[\titlerule]
+{.25em}
+{\filcenter\bfseries\lowercase}
 
 \titleformat{\subsection}
 {\bfseries\Large}
-{$\bullet$}
-{0em}
+{\hspace{-.2in}$\bullet$}
+{.25em}
 {}
 
 \titleformat{\subsubsection}[runin]
@@ -22,13 +23,16 @@
 {0em}
 {}[ ---]
 
+\titlespacing{\subsubsection}
+{0em} {.25em} {.5em}
+
 \renewcommand{\maketitle}{
 	\begin{center}
-    {\huge\bfseries\theauthor}
-    
-    \vspace{.5em}
+		{\huge\bfseries\theauthor}
 
-    javiermarquezportillo@gmail.com --- jportillo.com
+		\vspace{.5em}
+
+		javiermarquezportillo@gmail.com
 	\end{center}
 }
 
@@ -49,19 +53,19 @@ With a strong foundation, a hunger for knowledge, and an unwavering attention to
 
 NeoVim (main), VSCode, Tmux, common linux utils, git, SSH, VPN, can adapt depending on the need.
 
-\subsection{Programming Languages}
+\subsection{Software Development}
 
-\subsubsection{Scripting}
+\subsubsection{Programming Languages}
 
-JavaScript, TypeScript, PHP, Elixir (beginner), Python, Lua, Go (beginner), Bash, Java for Android (beginner)
+JavaScript, TypeScript, PHP, Elixir (beginner), Python, Lua, Go (beginner), Bash, Java for Android (beginner).
 
 \subsubsection{Markup}
 
-HTML, CSS, Markdown, \LaTeX{}
+HTML, CSS, Markdown, \LaTeX{}.
 
 \subsubsection{Frameworks \& Libraries}
 
-React, NestJS, VueJS, ExpressJS, Socket.io, Tailwind, Webpack, ReST
+React, NestJS, VueJS, ExpressJS, Socket.io, Tailwind, Webpack, Vite, ReST, Jest, Playwright, Cucumber.
 
 \subsection{External Services \& Other Technologies}
 
@@ -82,10 +86,28 @@ Docker, Kubernetes, MySQL, PostgreSQL, MongoDB, RabbitMQ, Ejabberd (XMPP), Faceb
 	\item \textbf{Certified Kubernetes Administrator} \newline The Cloud Native Computing Foundation, 2022.
 \end{itemize}
 
-
-
 \section{Job Experience}
 
-\section{Service}
+\subsubsection{Dada Dada \& Cia. S.A. de C.V.}
+
+Software Engineer; Sep '17 - Feb '23
+
+\begin{itemize}
+  \item Ground-up development of services, integrations, mantainance of legacy systems, unit testing.
+  \item Development of ``Omnichannel Project'', a multichannel social-media bridge meant to distribute direct messages sent via instant messaging to be attended by groups of agents.
+  \item Development of ``Automatic Dialer'', a platform for setup, management and distribution of massive call campaings.
+  \item Development of Chat Bots using Rasa.
+  \item Cloud and On-Premise server administration.
+  \item Database management, creation and maintainance of schemas.
+  \item Dockerization and deployment of services with different levels of orchestration depending on client's needs.
+\end{itemize}
+
+\subsubsection{Jobchain GmbH}
+
+Backend Developer; Feb '23 - Current
+
+\begin{itemize}
+  \item Development of back-end services focused on end-user messagign and contact management.
+\end{itemize}
 
 \end{document}
